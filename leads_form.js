@@ -24,7 +24,12 @@ $('#leads-form').submit(function (e) {
         console.error('problem submitting form')
         //error
         alert('Oh no! something went wrong. we should check our code to make sure everything matches with Google');
-      }
+      },
+      404: function (data) { //404 is when Google gives a CORS error too?, don't worry it went through
+        console.log('form submitted');
+        //success
+        $('#form_success').text('Welcome!');
+      },
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
       console.debug("error in form");
