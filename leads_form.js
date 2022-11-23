@@ -12,11 +12,11 @@ $('#leads-form').submit(function (e) {
     statusCode: { //the status code from the POST request
       0: function (data) { //0 is when Google gives a CORS error, don't worry it went through
         //success
-        $('#form-success').text('hooray!');
+        $('#form-success').text('Welcome!');
       },
       200: function (data) {//200 is a success code. it went through!
         //success
-        $('#form-success').text('hooray!');
+        $('#form-success').text('Welcome!');
       },
       403: function (data) {//403 is when something went wrong and the submission didn't go through
         //error
