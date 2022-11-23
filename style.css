@@ -298,6 +298,12 @@ input[type=submit] {
   margin-bottom: 0;
 } */
 
+.form_success {
+  text-align: center;
+  font: 1.3rem/1.5 var(--body-font);
+  margin: var(--space-md);
+}
+
 @media (min-width: 760px) {
   .waitlist__content {
     display: grid;
