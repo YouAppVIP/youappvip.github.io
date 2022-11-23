@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root {
+  --primary-color: #fe5303;
+  --app-color: hsl(231deg 62% 46%);
+  --gray-color: #dedede;
+  --gray_color1: #ababab;
+  --gray_color2: #808080;
+
+  --heading-font: 'Quicksand', sans-serif;
+  --heading-font2: 'Abel', sans-serif;
+  --body-font: 'Abel', sans-serif;
+  --body-font2: 'Ubuntu', sans-serif;
+  --body-font3: 'Dosis', sans-serif;
+
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 74px;
+  --space-3xl: 188px;
+}
+
+* {
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  color: #222;
+  font-family: var(--body-font);
+  background-color: black;
+}
+
+section {
+  padding: var(--space-2xl) 0;
+}
+
+.container {
+  max-width: 720px;
+  padding: var(--space-lg);
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--gray-color);
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: var(--heading-font2);
+  font-weight: 700;
+  color: var(--gray_color1);
+  margin: 0;
+  margin-top: var(--space-2xl);
+}
+
+p,
+ul,
+li {
+  font-family: var(--heading-font2);
+  font-size: 1.5rem;
+  color: var(--gray_color2);
+  margin: 0;
+  margin-top: var(--space-md);
+}
+
+strong {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--gray-color);
+  text-decoration: none;
+}
+
+/* -- TOP HEADER ------------------------------------------------------------------- */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 44px;
+}
+
+.top-header .logo_container {
+  display: flex;
+  /* border: 1px solid yellow; */
+}
+
+.top-header .beta_button_container {
+  display: flex;
+  /* border: 1px solid yellow; */
+}
+
+.youapp {
+  display: flex;
+  font-family: var(--body-font);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: white;
+}
+
+.beta {
+  background-color: var(--primary-color);
+  border: none;
+  padding: var(--space-2xs) var(--space-sm);
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: black;
+}
+
+.top-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+.top-header .container {
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+}
+
+.top-header--white-background {
+  background-color: black;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.top-header--white-background path {
+  fill: var(--primary-color);
+  transition: fill 300ms ease-in-out;
+}
+
+/* -- PRIVACY ---------------------------------------------------------------------- */
+
+privacy {
+  background-image: linear-gradient(0deg,
+      hsl(231deg 62% 46%) 0%,
+      hsl(235deg 57% 40%) 0%,
+      hsl(238deg 53% 34%) 0%,
+      hsl(242deg 52% 28%) 0%,
+      hsl(245deg 54% 21%) 0%,
+      hsl(249deg 57% 14%) 0%,
+      hsl(267deg 100% 7%) 1%,
+      hsl(262deg 94% 7%) 1%,
+      hsl(257deg 88% 6%) 2%,
+      hsl(252deg 82% 6%) 4%,
+      hsl(246deg 76% 6%) 6%,
+      hsl(240deg 70% 5%) 9%,
+      hsl(236deg 70% 4%) 13%,
+      hsl(236deg 76% 4%) 18%,
+      hsl(236deg 84% 3%) 24%,
+      hsl(236deg 93% 3%) 33%,
+      hsl(237deg 100% 3%) 45%,
+      hsl(240deg 100% 3%) 63%,
+      hsl(0deg 0% 0%) 100%);
+}
+
+.contact_block {
+  text-indent: 44px;
+}
+
+/* -- FOOTER ----------------------------------------------------------------------- */
+
+footer {
+  background-color: black;
+  text-align: center;
+}
+
+/* footer .container {
+  padding: 0 var(--space-2xl);
+} */
+
+footer .signature {
+  margin: var(--space-lg) 0;
+  text-align: left;
+}
+
+footer .social_media_icons {
+  display: flex;
+  gap: 12px;
+  /* flex-direction: column; */
+}
+
+footer .social_media_icons img {
+  width: 28px;
+  height: 28px;
+  opacity: 20%;
+}
+
+footer p {
+  font-family: var(--heading-font);
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 140%;
+  color: var(--gray_color2);
+}
