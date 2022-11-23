@@ -915,7 +915,6 @@ input[type=submit] {
 
 .pricing_grid_item svg {
   height: 44px;
-  border: 1px solid yellow;
 }
 
 .pricing_grid_item svg path {
