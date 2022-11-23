@@ -5,6 +5,10 @@ $('#leads-form').submit(function (e) {
 
   //AJAX request
   $.ajax({
+    beforeSend: function (xhr) {
+      xhr.setRequestHeader('Access-Control-Allow-Origin', 'chrome-extension://EXTENSION_ID');
+      xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, PUT');
+    },
     url: 'https://docs.google.com/forms/d/e/1FAIpQLSe1lOKSU4NGTqy2KEhbxFu2MM4GLKfTm5tCYbmoLVLyo6Imlw/formResponse',     //The public Google Form url, but replace /view with /formResponse
     data: $('#leads-form').serialize(), //Nifty jquery function that gets all the input data 
     type: 'POST', //tells ajax to post the data to the url

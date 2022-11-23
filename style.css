@@ -258,7 +258,7 @@ header {
 
 }
 
-.waitlist__button {
+input[type=submit] {
   display: block;
 
   background-color: var(--primary-color);
@@ -277,6 +277,26 @@ header {
   margin-top: auto;
   margin-bottom: 0;
 }
+
+/* .waitlist__button {
+  display: block;
+
+  background-color: var(--primary-color);
+
+  width: 100%;
+  height: 54px;
+
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+
+  border-radius: 8px;
+  border: none;
+
+  padding: var(--space-sm) var(--space-xl);
+  margin-top: auto;
+  margin-bottom: 0;
+} */
 
 @media (min-width: 760px) {
   .waitlist__content {
@@ -598,9 +618,14 @@ header {
       hsl(0deg 0% 0%) 100%);
 }
 
-.how-it-works .text {
-  padding: 0 var(--space-md);
+.how-it-works .container {
+  width: 100%;
   text-align: center;
+}
+
+.how-it-works .text {
+  display: inline-block;
+  padding: 0 var(--space-md);
 }
 
 .how-it-works h1 {
