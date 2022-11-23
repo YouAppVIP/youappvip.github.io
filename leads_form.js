@@ -25,6 +25,10 @@ $('#leads-form').submit(function (e) {
         //error
         alert('Oh no! something went wrong. we should check our code to make sure everything matches with Google');
       }
+    },
+    error: function (XMLHttpRequest, textStatus, errorThrown) {
+      console.debug("error for " + uuid);
+      console.log(XMLHttpRequest);
     }
   });
 });
