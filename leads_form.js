@@ -27,7 +27,7 @@ $('#leads-form').submit(function (e) {
       }
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
-      console.debug("error for " + uuid);
+      console.debug("error in form");
       console.log(XMLHttpRequest);
     }
   });
