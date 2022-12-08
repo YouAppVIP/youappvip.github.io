@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
 :root {
   --primary-color: #fe5303;
@@ -12,13 +12,12 @@
   --gray_color1: #ababab;
   --gray_color2: #808080;
 
-  --heading-font: 'Quicksand', sans-serif;
-  --heading-font2: 'Abel', sans-serif;
-  --body-font: 'Abel', sans-serif;
+  --heading-font: "Quicksand", sans-serif;
+  --heading-font2: "Abel", sans-serif;
+  --body-font: "Abel", sans-serif;
   /*'Poppins', sans-serif;*/
-  --body-font2: 'Ubuntu', sans-serif;
-  --body-font3: 'Dosis', sans-serif;
-
+  --body-font2: "Ubuntu", sans-serif;
+  --body-font3: "Dosis", sans-serif;
 
   --space-2xs: 4px;
   --space-xs: 8px;
@@ -102,6 +101,10 @@ strong {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* -- TOP HEADER ------------------------------------------------------------------- */
 
 header {
@@ -170,7 +173,8 @@ header {
 /* -- HERO AREA -------------------------------------------------------------------- */
 
 .hero-area {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./images/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./images/hero.jpg");
   color: white;
 
   background-repeat: no-repeat;
@@ -215,7 +219,8 @@ header {
 
 /* ----------------------------------- WAITLIST ------------------------------------ */
 
-.waitlist__form {}
+.waitlist__form {
+}
 
 .waitlist__content {
   width: 100%;
@@ -255,10 +260,9 @@ header {
   padding: var(--space-sm);
   margin-top: auto;
   margin-bottom: 0;
-
 }
 
-input[type=submit] {
+input[type="submit"] {
   display: block;
 
   background-color: var(--primary-color);
@@ -326,7 +330,7 @@ input[type=submit] {
 
   .waitlist__input:not(:first-child) input {
     /* background: yellow; */
-    border-left: 4px solid rgba(0, 0, 0, 30%)
+    border-left: 4px solid rgba(0, 0, 0, 30%);
   }
 
   .waitlist__input:first-child {
@@ -365,26 +369,28 @@ input[type=submit] {
 /* -- ABOUT US --------------------------------------------------------------------- */
 
 .about-us {
-  background-image: linear-gradient(0deg,
-      hsl(231deg 62% 46%) 0%,
-      hsl(235deg 57% 40%) 0%,
-      hsl(238deg 53% 34%) 0%,
-      hsl(242deg 52% 28%) 0%,
-      hsl(245deg 54% 21%) 0%,
-      hsl(249deg 57% 14%) 0%,
-      hsl(267deg 100% 7%) 1%,
-      hsl(262deg 94% 7%) 1%,
-      hsl(257deg 88% 6%) 2%,
-      hsl(252deg 82% 6%) 4%,
-      hsl(246deg 76% 6%) 6%,
-      hsl(240deg 70% 5%) 9%,
-      hsl(236deg 70% 4%) 13%,
-      hsl(236deg 76% 4%) 18%,
-      hsl(236deg 84% 3%) 24%,
-      hsl(236deg 93% 3%) 33%,
-      hsl(237deg 100% 3%) 45%,
-      hsl(240deg 100% 3%) 63%,
-      hsl(0deg 0% 0%) 100%);
+  background-image: linear-gradient(
+    0deg,
+    hsl(231deg 62% 46%) 0%,
+    hsl(235deg 57% 40%) 0%,
+    hsl(238deg 53% 34%) 0%,
+    hsl(242deg 52% 28%) 0%,
+    hsl(245deg 54% 21%) 0%,
+    hsl(249deg 57% 14%) 0%,
+    hsl(267deg 100% 7%) 1%,
+    hsl(262deg 94% 7%) 1%,
+    hsl(257deg 88% 6%) 2%,
+    hsl(252deg 82% 6%) 4%,
+    hsl(246deg 76% 6%) 6%,
+    hsl(240deg 70% 5%) 9%,
+    hsl(236deg 70% 4%) 13%,
+    hsl(236deg 76% 4%) 18%,
+    hsl(236deg 84% 3%) 24%,
+    hsl(236deg 93% 3%) 33%,
+    hsl(237deg 100% 3%) 45%,
+    hsl(240deg 100% 3%) 63%,
+    hsl(0deg 0% 0%) 100%
+  );
 }
 
 .about-us .card {
@@ -442,10 +448,12 @@ input[type=submit] {
 }
 
 .featuring {
-  background-image: radial-gradient(#202d92 43%,
-      hsl(234deg 66% 25%) 53%,
-      hsl(235deg 68% 15%) 68%,
-      #030411 100%);
+  background-image: radial-gradient(
+    #202d92 43%,
+    hsl(234deg 66% 25%) 53%,
+    hsl(235deg 68% 15%) 68%,
+    #030411 100%
+  );
 }
 
 .featuring .stack {
@@ -456,7 +464,7 @@ input[type=submit] {
   justify-items: center;
 }
 
-.featuring .stack>* {
+.featuring .stack > * {
   grid-area: 1/1/1/1;
 }
 
@@ -479,7 +487,8 @@ input[type=submit] {
 }
 
 .featuring .featured_artist_background .left_column {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.95)), url("./images/wallpapers/isitjosh2.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.95)),
+    url("./images/wallpapers/isitjosh2.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -602,26 +611,28 @@ input[type=submit] {
 /* -- HOW IT WORKS ----------------------------------------------------------------- */
 
 .how-it-works {
-  background-image: linear-gradient(180deg,
-      hsl(231deg 62% 46%) 0%,
-      hsl(235deg 57% 40%) 0%,
-      hsl(238deg 53% 34%) 0%,
-      hsl(242deg 52% 28%) 0%,
-      hsl(245deg 54% 21%) 0%,
-      hsl(249deg 57% 14%) 0%,
-      hsl(267deg 100% 7%) 1%,
-      hsl(262deg 94% 7%) 1%,
-      hsl(257deg 88% 6%) 2%,
-      hsl(252deg 82% 6%) 4%,
-      hsl(246deg 76% 6%) 6%,
-      hsl(240deg 70% 5%) 9%,
-      hsl(236deg 70% 4%) 13%,
-      hsl(236deg 76% 4%) 18%,
-      hsl(236deg 84% 3%) 24%,
-      hsl(236deg 93% 3%) 33%,
-      hsl(237deg 100% 3%) 45%,
-      hsl(240deg 100% 3%) 63%,
-      hsl(0deg 0% 0%) 100%);
+  background-image: linear-gradient(
+    180deg,
+    hsl(231deg 62% 46%) 0%,
+    hsl(235deg 57% 40%) 0%,
+    hsl(238deg 53% 34%) 0%,
+    hsl(242deg 52% 28%) 0%,
+    hsl(245deg 54% 21%) 0%,
+    hsl(249deg 57% 14%) 0%,
+    hsl(267deg 100% 7%) 1%,
+    hsl(262deg 94% 7%) 1%,
+    hsl(257deg 88% 6%) 2%,
+    hsl(252deg 82% 6%) 4%,
+    hsl(246deg 76% 6%) 6%,
+    hsl(240deg 70% 5%) 9%,
+    hsl(236deg 70% 4%) 13%,
+    hsl(236deg 76% 4%) 18%,
+    hsl(236deg 84% 3%) 24%,
+    hsl(236deg 93% 3%) 33%,
+    hsl(237deg 100% 3%) 45%,
+    hsl(240deg 100% 3%) 63%,
+    hsl(0deg 0% 0%) 100%
+  );
 }
 
 .how-it-works .container {
@@ -737,26 +748,28 @@ input[type=submit] {
 /* -- FEATURES --------------------------------------------------------------------- */
 
 .features {
-  background-image: linear-gradient(180deg,
-      hsl(231deg 62% 46%) 0%,
-      hsl(235deg 57% 40%) 0%,
-      hsl(238deg 53% 34%) 0%,
-      hsl(242deg 52% 28%) 0%,
-      hsl(245deg 54% 21%) 0%,
-      hsl(249deg 57% 14%) 0%,
-      hsl(267deg 100% 7%) 1%,
-      hsl(262deg 94% 7%) 1%,
-      hsl(257deg 88% 6%) 2%,
-      hsl(252deg 82% 6%) 4%,
-      hsl(246deg 76% 6%) 6%,
-      hsl(240deg 70% 5%) 9%,
-      hsl(236deg 70% 4%) 13%,
-      hsl(236deg 76% 4%) 18%,
-      hsl(236deg 84% 3%) 24%,
-      hsl(236deg 93% 3%) 33%,
-      hsl(237deg 100% 3%) 45%,
-      hsl(240deg 100% 3%) 63%,
-      hsl(0deg 0% 0%) 100%);
+  background-image: linear-gradient(
+    180deg,
+    hsl(231deg 62% 46%) 0%,
+    hsl(235deg 57% 40%) 0%,
+    hsl(238deg 53% 34%) 0%,
+    hsl(242deg 52% 28%) 0%,
+    hsl(245deg 54% 21%) 0%,
+    hsl(249deg 57% 14%) 0%,
+    hsl(267deg 100% 7%) 1%,
+    hsl(262deg 94% 7%) 1%,
+    hsl(257deg 88% 6%) 2%,
+    hsl(252deg 82% 6%) 4%,
+    hsl(246deg 76% 6%) 6%,
+    hsl(240deg 70% 5%) 9%,
+    hsl(236deg 70% 4%) 13%,
+    hsl(236deg 76% 4%) 18%,
+    hsl(236deg 84% 3%) 24%,
+    hsl(236deg 93% 3%) 33%,
+    hsl(237deg 100% 3%) 45%,
+    hsl(240deg 100% 3%) 63%,
+    hsl(0deg 0% 0%) 100%
+  );
 }
 
 .text-button {
@@ -871,8 +884,10 @@ input[type=submit] {
 /* -- PRICING ---------------------------------------------------------------------- */
 
 .pricing {
-  background-image: radial-gradient(hsl(235deg 68% 15%) 0%,
-      hsl(236deg 70% 4%) 100%);
+  background-image: radial-gradient(
+    hsl(235deg 68% 15%) 0%,
+    hsl(236deg 70% 4%) 100%
+  );
 }
 
 .pricing h1 {
@@ -1007,26 +1022,28 @@ input[type=submit] {
 /* -- COMING SOON ------------------------------------------------------------------ */
 
 .coming_soon {
-  background-image: linear-gradient(180deg,
-      hsl(231deg 62% 46%) 0%,
-      hsl(235deg 57% 40%) 0%,
-      hsl(238deg 53% 34%) 0%,
-      hsl(242deg 52% 28%) 0%,
-      hsl(245deg 54% 21%) 0%,
-      hsl(249deg 57% 14%) 0%,
-      hsl(267deg 100% 7%) 1%,
-      hsl(262deg 94% 7%) 1%,
-      hsl(257deg 88% 6%) 2%,
-      hsl(252deg 82% 6%) 4%,
-      hsl(246deg 76% 6%) 6%,
-      hsl(240deg 70% 5%) 9%,
-      hsl(236deg 70% 4%) 13%,
-      hsl(236deg 76% 4%) 18%,
-      hsl(236deg 84% 3%) 24%,
-      hsl(236deg 93% 3%) 33%,
-      hsl(237deg 100% 3%) 45%,
-      hsl(240deg 100% 3%) 63%,
-      hsl(0deg 0% 0%) 100%);
+  background-image: linear-gradient(
+    180deg,
+    hsl(231deg 62% 46%) 0%,
+    hsl(235deg 57% 40%) 0%,
+    hsl(238deg 53% 34%) 0%,
+    hsl(242deg 52% 28%) 0%,
+    hsl(245deg 54% 21%) 0%,
+    hsl(249deg 57% 14%) 0%,
+    hsl(267deg 100% 7%) 1%,
+    hsl(262deg 94% 7%) 1%,
+    hsl(257deg 88% 6%) 2%,
+    hsl(252deg 82% 6%) 4%,
+    hsl(246deg 76% 6%) 6%,
+    hsl(240deg 70% 5%) 9%,
+    hsl(236deg 70% 4%) 13%,
+    hsl(236deg 76% 4%) 18%,
+    hsl(236deg 84% 3%) 24%,
+    hsl(236deg 93% 3%) 33%,
+    hsl(237deg 100% 3%) 45%,
+    hsl(240deg 100% 3%) 63%,
+    hsl(0deg 0% 0%) 100%
+  );
 }
 
 .coming_soon_title {
