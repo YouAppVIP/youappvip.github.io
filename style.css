@@ -7,7 +7,7 @@
 
 :root {
   --primary-color: #fe5303;
-  --app-color: hsl(231deg 62% 46%);
+  --app-color: #2d42be;
   --gray-color: #dedede;
   --gray_color1: #ababab;
   --gray_color2: #808080;
@@ -442,10 +442,10 @@ input[type=submit] {
 }
 
 .featuring {
-  background-image: radial-gradient(hsl(233deg 64% 35%) 43%,
+  background-image: radial-gradient(#202d92 43%,
       hsl(234deg 66% 25%) 53%,
       hsl(235deg 68% 15%) 68%,
-      hsl(236deg 70% 4%) 100%);
+      #030411 100%);
 }
 
 .featuring .stack {
