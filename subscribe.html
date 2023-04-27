@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    window.onscroll = () => {
+      if (window.pageYOffset > 50) {
+        document.getElementById('top-header').classList.add('top-header--white-background');
+      } else {
+        document.getElementById('top-header').classList.remove('top-header--white-background');
+      }
+    };
+  </script>
+
+  <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-195797052-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-195797052-1');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="YouApp &dash; white label apps for independent artists" />
+    <meta property="og:image" content="https://youapp.vip/images/hero.jpg" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>YouApp: Personal apps for independent artists</title>
+  </head>
+
+  <body>
+    <!-- TOP HEADER -->
+    <div class="top-header" id="top-header">
+      <div class="container">
+        <header>
+          <div class="logo_container">
+            <img src="./images/youapp_logo.svg" alt="" class="logo" />
+          </div>
+
+          <h1 class="youapp">YouApp</h1>
+
+          <div class="logo_container">
+            
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <h1>Ready, Set, 🚀</h1>
+
+        <!-- <p>
+          Welcome to YouApp, the revolutionary app-building platform for musicians and content creators who want full artistic control over
+          their digital presence. With YouApp, you can create a personal app that reflects your unique style and brand, and connect directly
+          with your audience without any intermediaries.
+        </p>
+        <p>
+          Our user-friendly interface allows you to customize your app with your own artwork, music, videos, and other content, giving you
+          complete control over the look and feel of your app. You can also integrate your social media channels, merchandise store, and
+          other features that help you monetize your content and build a loyal fan base.
+        </p> -->
+        <p>Launch your creativity and reach your destiny.</p>
+        <p>Our mission is affordable apps that pay for themselves.</p>
+        <p>Try YouApp today, and start building your own platform.</p>
+      </div>
+    </section>
+
+    <div style="margin: 44px 0;">
+      <stripe-pricing-table
+        pricing-table-id="prctbl_1N0bShEhwj4WvcKuGM1LQRoH"
+        publishable-key="pk_test_51MOJBjEhwj4WvcKuR5sfKNUtkvoSWvWazaZiys0NCFCZ0eodtIqPwbv5E2adl1YU1rsLGln5ZsCWUDKwNWQVpP3t00T435ZpDZ"
+      >
+      </stripe-pricing-table>
+    </div>
+
+    <section>
+      <div class="container">
+        <p>h</p>
+        <br/>
+      </div>
+    </section>
+  </body>
+</html>
