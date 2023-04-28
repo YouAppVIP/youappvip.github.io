@@ -1,25 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 :root {
-  --primary-color: #8C583A;
+  --primary-color: #8c583a;
   --cta-color: black;
-  --highlight-color: #F2AE72;
+  --highlight-color: #f2ae72;
   --app-color: #2d42be;
-  --dark-color: #0D0D0D;
-  --gray-color: #F2E8E4;
+  --dark-color: #0d0d0d;
+  --gray-color: #f2e8e4;
   --gray_color1: #ababab;
   --gray_color2: #808080;
 
-  --heading-font: "Quicksand", sans-serif;
-  --heading-font2: "Abel", sans-serif;
-  --body-font: "Abel", sans-serif;
-  --body-font2: "Ubuntu", sans-serif;
-  --body-font3: "Dosis", sans-serif;
+  --heading-font: 'Quicksand', sans-serif;
+  --heading-font2: 'Abel', sans-serif;
+  --body-font: 'Abel', sans-serif;
+  --body-font2: 'Ubuntu', sans-serif;
+  --body-font3: 'Dosis', sans-serif;
 
   --space-2xs: 4px;
   --space-xs: 8px;
@@ -40,7 +40,7 @@
 body {
   margin: 0;
   color: #222;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--dark-color);
 }
 
@@ -52,7 +52,7 @@ button {
 }
 
 section {
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
   padding: var(--space-2xl) 0;
 }
 
@@ -92,25 +92,24 @@ strong {
   color: var(--primary-color);
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
+  width: 100%;
+  height: 100%;
   max-width: 1200px;
   padding: 0 var(--space-lg);
+  text-align: center;
   margin: 0 auto;
 }
 
-.copy {}
-
-.section-name {
-  text-transform: uppercase;
-  color: white;
-  font-weight: 500;
-  font-size: 0.875rem;
-  margin-bottom: 32px;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
+.copy {
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
 }
 
 /* -- TOP HEADER ------------------------------------------------------------------- */
@@ -124,21 +123,7 @@ header {
 
 .logo {
   height: 44px;
-}
-
-.top-header .logo_container {
-  display: flex;
-  width: 88px;
-  height: 44px;
-  /* border: 1px solid yellow; */
-}
-
-.youapp {
-  display: flex;
-  font-family: var(--body-font);
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: white;
+  padding: 8px;
 }
 
 .top-header {
@@ -146,11 +131,6 @@ header {
   width: 100%;
   z-index: 1;
   transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
-}
-
-.top-header .container {
-  padding-top: var(--space-sm);
-  padding-bottom: var(--space-sm);
 }
 
 .top-header--white-background {
@@ -163,10 +143,24 @@ header {
   transition: fill 300ms ease-in-out;
 }
 
+.top-header .logo_container {
+  display: flex;
+  width: 88px;
+  height: 44px;
+}
+
+.youapp {
+  display: flex;
+  font-family: var(--body-font);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+}
+
 /* -- HERO AREA -------------------------------------------------------------------- */
 
 .hero-area {
-  background-image: url("./images/hero2.jpg");
+  background-image: url('./images/hero2.jpg');
   color: white;
 
   background-repeat: no-repeat;
@@ -177,11 +171,12 @@ header {
   position: relative;
 }
 
-.hero-area .container {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+/* .hero-area .container { */
+  /* position: absolute; */
+  /* height: 100%; */
+  /* bottom: 0; */
+  /* width: 100%; */
+/* } */
 
 .hero-heading {
   font-family: var(--heading-font);
@@ -189,21 +184,15 @@ header {
   font-weight: 400;
   color: white;
   text-shadow: 1px 1px 2px black;
-}
-
-.hero-subheading {
-  font-family: var(--heading-font2);
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: rgb(220, 220, 220);
+  padding-top: 488px;
 }
 
 /* ----------------------------------- CTA ------------------------------------ */
 
 .cta_button {
   /* display: inline; */
-  background-color: var(--cta-color);
-  color: var(--gray-color);
+  background-color: var(--gray-color);
+  color: var(--dark-color);
   width: 88px;
   /* height: 44px; */
   font-family: var(--heading-font);
@@ -214,20 +203,14 @@ header {
   border-radius: 29px;
   border: none;
 
-  padding: 5px 0;
+  padding: 5px 20px;
 }
 
 /* -- ABOUT --------------------------------------------------------------------- */
 
-.about-us {
-  background: rgb(0, 0, 0);
-  background: #0D0D0D;
-}
-
 .icons_container {
   width: 100%;
   position: relative;
-  padding: var(--space-lg) 0;
 }
 
 .icons_grid {
@@ -237,6 +220,11 @@ header {
   height: 128px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.icon {
+  width: 128px;
+  height: 128px;
 }
 
 .vinyl img {
@@ -253,6 +241,18 @@ header {
 
 /* -- FEATURING -------------------------------------------------------------------- */
 
+.featuring {
+  padding: 0;
+}
+
+.featured_hero {
+  background-image: url('./images/hero3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 480pt;
+}
+
 .featured_artist_title {
   font-family: var(--heading-font);
   font-size: 1.5rem;
@@ -261,6 +261,7 @@ header {
   opacity: 40%;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 28px;
   margin-bottom: 28px;
 }
 
@@ -272,7 +273,7 @@ header {
   justify-items: center;
 }
 
-.featuring .stack>* {
+.featuring .stack > * {
   grid-area: 1/1/1/1;
 }
 
@@ -287,8 +288,7 @@ header {
 }
 
 .featuring .featured_artist_background .left_column {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.95)),
-    url("./images/wallpapers/isitjosh2.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.95)), url('./images/wallpapers/isitjosh2.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -297,12 +297,14 @@ header {
   background-color: black;
 }
 
-.featuring .featured_artist_background .right_column .album_grid {
+.album_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 8px;
   grid-row-gap: 8px;
+  margin-top: 14px;
+  margin-bottom: 88px;
 }
 
 .featured_artist_content {
@@ -325,27 +327,27 @@ header {
 }
 
 .album1 {
-  background-image: url("images/wallpapers/albums/11DD7FF8-F220-43CE-813C-A62559FCC953 Large.jpeg");
+  background-image: url('images/wallpapers/albums/11DD7FF8-F220-43CE-813C-A62559FCC953 Large.jpeg');
 }
 
 .album2 {
-  background-image: url("images/wallpapers/albums/10B0AEAD-E9A6-464F-9B69-29F1A155692C Large.jpeg");
+  background-image: url('images/wallpapers/albums/10B0AEAD-E9A6-464F-9B69-29F1A155692C Large.jpeg');
 }
 
 .album3 {
-  background-image: url("images/wallpapers/albums/46255AD9-10B9-4F5F-ADA0-1D37DD9F7240 Large.jpeg");
+  background-image: url('images/wallpapers/albums/46255AD9-10B9-4F5F-ADA0-1D37DD9F7240 Large.jpeg');
 }
 
 .album4 {
-  background-image: url("images/wallpapers/albums/82DC6343-CA4F-415B-98E4-14C5C7137F44 Large.jpeg");
+  background-image: url('images/wallpapers/albums/82DC6343-CA4F-415B-98E4-14C5C7137F44 Large.jpeg');
 }
 
 .album5 {
-  background-image: url("images/wallpapers/albums/9B61C31F-71A1-4B33-B297-C00C9CE910D5 Large.jpeg");
+  background-image: url('images/wallpapers/albums/9B61C31F-71A1-4B33-B297-C00C9CE910D5 Large.jpeg');
 }
 
 .album6 {
-  background-image: url("images/wallpapers/albums/F63D5ADE-4ED5-41D5-8533-66C5235096D4 Large.jpeg");
+  background-image: url('images/wallpapers/albums/F63D5ADE-4ED5-41D5-8533-66C5235096D4 Large.jpeg');
 }
 
 @media (min-width: 760px) {
@@ -354,9 +356,10 @@ header {
     grid-template-rows: repeat(1, 1fr);
   }
 
-  .featuring .featured_artist_background .right_column .album_grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+  .album_grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 14px;
   }
 
   .album {
@@ -394,10 +397,16 @@ header {
   font-size: 2rem;
   font-weight: 400;
   color: var(--gray-color);
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 24px;
 }
 
-.featured_row .app_store_button {
-  padding-top: var(--space-xl);
+.app_store_button {
+  padding: var(--space-xl) 0;
+  margin: 0 auto;
+  width: 250px;
 }
 
 .featuring .copyright {
@@ -408,198 +417,12 @@ header {
   margin: var(--space-md) 0;
 }
 
-/* -- PRICING ---------------------------------------------------------------------- */
-
-.pricing h1 {
-  font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-  margin-bottom: 36px;
-  text-transform: uppercase;
-}
-
-.pricing h2 {
-  font-family: var(--body-font);
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: var(--gray_color1);
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.pricing p {
-  font: 1.3rem/1.5 var(--body-font);
-  color: var(--gray_color2);
-  text-align: center;
-  margin-bottom: 8px;
-}
-
-.pricing_grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  border: 1px solid rgba(255, 255, 255, 20%);
-  border-radius: 24px;
-  margin-top: var(--space-xl);
-  margin-bottom: var(--space-xl);
-}
-
-.pricing_grid_item {
-  text-align: center;
-  /* height: 180px; */
-  /* overflow: hidden; */
-  padding: var(--space-lg) 0;
-  margin: var(--space-lg) 0;
-}
-
-.pricing_grid_item svg {
-  height: 44px;
-}
-
-.pricing_grid_item svg path {
-  fill: var(--app-color);
-}
-
-.pricing_grid_item_title {
-  font-family: var(--body-font);
-  color: var(--gray_color1);
-  font-size: 1rem;
-  margin-top: var(--space-sm);
-}
-
-.pricing .pricing_details {
-  font: 1.1rem/1.5 var(--body-font);
-  color: var(--gray_color2);
-}
-
-@media (min-width: 760px) {
-  .pricing .card {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* TESTIMONIALS
-
-.testimonials {
-  background-color: rgba(0, 0, 0);
-}
-
-.feedback {
-  margin-top: var(--space-2xl);
-  display: grid;
-  gap: var(--space-xl);
-}
-
-.feedback-card__dialog {
-  background-color: white;
-  padding: var(--space-xl) var(--space-lg);
-  border-radius: 20px 20px 20px 0;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
-  font-family: var(--heading-font);
-}
-
-.feedback-card__dialog__title {
-  font-weight: 700;
-  margin-bottom: var(--space-md);
-}
-
-.feedback-card__dialog__content {
-  color: #4f4f4f;
-  line-height: 180%;
-}
-
-.feedback-card__user {
-  margin-top: var(--space-md);
-
-  display: grid;
-  grid-template-columns: 52px 1fr;
-  gap: var(--space-md);
-}
-
-.feedback-card__user img {
-  width: 100%;
-}
-
-.feedback-card__user__name {
-  font-weight: 500;
-}
-
-.feedback-card__user__location {
-  color: #bdbdbd;
-  font-size: 0.75rem;
-}
-
-@media (min-width: 760px) {
-  .feedback {
-    grid-template-columns: repeat(3, 1fr);
-  }
-} */
-
-/* -- COMING SOON ------------------------------------------------------------------ */
-
-.coming_soon {
-  background-image: linear-gradient(180deg,
-      hsl(231deg 62% 46%) 0%,
-      hsl(235deg 57% 40%) 0%,
-      hsl(238deg 53% 34%) 0%,
-      hsl(242deg 52% 28%) 0%,
-      hsl(245deg 54% 21%) 0%,
-      hsl(249deg 57% 14%) 0%,
-      hsl(267deg 100% 7%) 1%,
-      hsl(262deg 94% 7%) 1%,
-      hsl(257deg 88% 6%) 2%,
-      hsl(252deg 82% 6%) 4%,
-      hsl(246deg 76% 6%) 6%,
-      hsl(240deg 70% 5%) 9%,
-      hsl(236deg 70% 4%) 13%,
-      hsl(236deg 76% 4%) 18%,
-      hsl(236deg 84% 3%) 24%,
-      hsl(236deg 93% 3%) 33%,
-      hsl(237deg 100% 3%) 45%,
-      hsl(240deg 100% 3%) 63%,
-      hsl(0deg 0% 0%) 100%);
-}
-
-.coming_soon_title {
-  font-family: var(--heading-font);
-  font-size: 1.6rem;
-  font-weight: 100;
-  color: white;
-  opacity: 40%;
-  text-transform: uppercase;
-  text-align: center;
-  /* margin-top: 56px; */
-  margin-bottom: 28px;
-}
-
-.coming_soon_grid {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
-  grid-column-gap: 2%;
-  margin: 0 var(--space-md);
-}
-
-.unreleased_app {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 /* -- FOOTER ----------------------------------------------------------------------- */
 
 footer {
   background-color: var(--dark-color);
   text-align: center;
 }
-
-/* footer .container {
-  padding: 0 var(--space-2xl);
-} */
 
 footer .signature {
   margin: var(--space-lg) 0;
@@ -630,7 +453,7 @@ footer p {
 http://stackoverflow.com/questions/26573346/ios-safari-messes-up-input-type-date
 */
 
-input[type="date"] {
+input[type='date'] {
   display: block;
 
   /* Solution 1 */

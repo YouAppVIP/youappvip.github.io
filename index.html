@@ -1,178 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <script>
-    window.onscroll = () => {
-      if (window.pageYOffset > 50) {
-        document.getElementById('top-header').classList.add('top-header--white-background');
-      } else {
-        document.getElementById('top-header').classList.remove('top-header--white-background');
+  <head>
+    <script>
+      window.onscroll = () => {
+        if (window.pageYOffset > 50) {
+          document.getElementById('top-header').classList.add('top-header--white-background');
+        } else {
+          document.getElementById('top-header').classList.remove('top-header--white-background');
+        }
+      };
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-195797052-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-    };
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-195797052-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+      gtag('js', new Date());
 
-    gtag('config', 'UA-195797052-1');
-  </script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script type="text/javascript" src="leads_form.js"></script>
+      gtag('config', 'UA-195797052-1');
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="leads_form.js"></script>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="YouApp &dash; white label apps for independent artists" />
-  <meta property="og:image" content="https://youapp.vip/images/hero.jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="YouApp &dash; white label apps for independent artists" />
+    <meta property="og:image" content="https://youapp.vip/images/hero.jpg" />
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
 
-  <title>YouApp: Personal apps for independent artists</title>
-</head>
+    <title>YouApp: Personal apps for independent artists</title>
+  </head>
 
-<body>
-  <!-- TOP HEADER -->
-  <div class="top-header" id="top-header">
-    <header>
-      <div class="logo_container">
+  <body>
+    <!-- TOP HEADER -->
+    <div class="top-header" id="top-header">
+      <header>
+        <div class="logo_container">
+          <a href="https://youapp.vip">
+            <img src="./images/youapp_logo.svg" alt="" class="logo" />
+          </a>
+        </div>
+
         <a href="https://youapp.vip">
-          <img src="./images/youapp_logo.svg" alt="" class="logo" />
+          <h1 class="youapp">YouApp</h1>
         </a>
-      </div>
-
-      <a href="https://youapp.vip">
-        <h1 class="youapp">YouApp</h1>
-      </a>
-      <a class="cta_button" href="subscribe.html">
-        Join
-      </a>
-    </header>
-  </div>
-
-  <!-- HERO AREA  -->
-  <div class="hero-area">
-    <div class="container">
-      <div class="copy">
-        <h1 class="hero-heading">Artistic freedom.</h1>
-      </div>
+        <a class="cta_button" href="subscribe.html"> Join </a>
+      </header>
     </div>
-  </div>
 
-  <!-- LEAD  -->
-  <section class="about-us">
-    <div class="container">
-      <div class="icons_container">
-        <div class="icons_grid">
-          <img src="./images/hero2_iconized.png" alt="" class="icon" />
+    <!-- HERO AREA  -->
+    <section class="hero-area">
+      <div class="container">
+        <div class="copy">
+          <h1 class="hero-heading">Artistic freedom.</h1>
         </div>
       </div>
-      <div class="copy">
-        <h2>
-          Infinite uniquity.
-        </h2>
-        <p>
-          Your work is precious.<br />You deserve a platform.<br />We can help.
-        </p>
-      </div>
-      <div class="icons_container">
-        <div class="icons_grid">
-          <div class="vinyl"><img src="./images/record.png" alt=""></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FEATURED ARTIST -->
-  <section class="featuring">
-    <div class="container">
-      <div class="featured_artist_title">featured artist</div>
-
-      <div class="stack">
-        <div class="featured_artist_background">
-          <div class="left_column">
-            <div class="featured_artist_content">
-              <div class="featured_row">
-                <div class="featured_app">
-                  <a href="https://apps.apple.com/us/app/isitjosh/id1594338722?itscg=30200&amp;itsct=apps_box_appicon"
-                    style="
-                        width: 170px;
-                        height: 170px;
-                        border-radius: 22%;
-                        overflow: hidden;
-                        display: inline-block;
-                        vertical-align: middle;
-                      ">
-                    <img src="./images/app_icons/isitjosh Small.png" alt="" />
-                  </a>
-                </div>
-
-                <div class="featured_app_name">isitjosh</div>
-
-                <!-- app store button -->
-                <div class="app_store_button">
-                  <a href="https://apps.apple.com/us/app/isitjosh/id1594338722?itsct=apps_box_badge&amp;itscg=30200"
-                    style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px"><img
-                      src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1650240000&h=23abcac179f3e9844aa28fb867eb2fda"
-                      alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="right_column">
-            <div class="album_grid">
-              <div class="album album1"></div>
-              <div class="album album2"></div>
-              <div class="album album3"></div>
-              <div class="album album4"></div>
-              <div class="album album5"></div>
-              <div class="album album6"></div>
-            </div>
+    <!-- LEAD  -->
+    <section>
+      <div class="container">
+        <div class="icons_container">
+          <div class="icons_grid">
+            <img src="./images/hero2_iconized.png" alt="" class="icon" />
           </div>
         </div>
+        <div class="copy">
+          <h2>No algorithm.</h2>
+          <p>Welcome to your app stage.</p>
+          <!-- <p>Your work is precious.<br />You deserve a platform.<br />We can help.</p> -->
+        </div>
+        <a class="cta_button" href="subscribe.html"> Begin </a>
+        <!-- <div class="icons_container">
+          <div class="icons_grid">
+            <div class="vinyl"><img src="./images/record.png" alt="" /></div>
+          </div>
+        </div> -->
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="container">
-      <div class="card">
+    <!-- FEATURED ARTIST -->
+    <section class="featuring">
+      <div class="featured_artist_title">featured</div>
+      <div class="featured_hero"></div>
+      <div class="container">
+        <div class="album_grid">
+          <div class="album album1"></div>
+          <div class="album album2"></div>
+          <div class="album album3"></div>
+          <div class="album album4"></div>
+          <div class="album album5"></div>
+          <div class="album album6"></div>
+        </div>
+
+        <div class="icons_container">
+          <div class="icons_grid">
+            <a href="https://apps.apple.com/us/app/isitjosh/id1594338722?itsct=apps_box_badge&amp;itscg=30200">
+              <img src="./images/app_icons/isitjosh Small.png" alt="" class="icon" />
+            </a>
+          </div>
+        </div>
+        
+        <div class="copy">
+          <div class="featured_app_name">isitjosh</div>
+        </div>
+        
+        <!-- app store button -->
+        <div class="app_store_button">
+          <a
+            href="https://apps.apple.com/us/app/isitjosh/id1594338722?itsct=apps_box_badge&amp;itscg=30200"
+            style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px"
+            ><img
+              src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1650240000&h=23abcac179f3e9844aa28fb867eb2fda"
+              alt="Download on the App Store"
+              style="border-radius: 13px; width: 250px; height: 83px"
+          /></a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="social_media_icons">
-        <a href="mailto:daniel@youapp.vip"><img src="./images/social_media_icons/email.svg" alt="" /></a>
-        <a href="https://twitter.com/youappvip"><img src="./images/social_media_icons/twitter.svg" alt="" /></a>
-        <a href=" https://www.instagram.com/youapp.vip/"><img src=" ./images/social_media_icons/instagram.svg"
-            alt="" /></a>
-        <a href="https://www.tiktok.com/@youapp.vip"><img src="./images/social_media_icons/tiktok.svg" alt="" /></a>
+    <section>
+      <div class="container">
+        <div class="card"></div>
       </div>
+    </section>
 
-      <!-- <img src=" ./images/youapp_logo_1.png" alt="About us 1" /> -->
-      <div class="signature">
-        <p>
-          <a href="./privacy-policy/">Privacy</a>
-        </p>
-        <p>
-          <a href="./end-user-license-agreement/">Terms</a>
-        </p>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="social_media_icons">
+          <a href="mailto:daniel@youapp.vip"><img src="./images/social_media_icons/email.svg" alt="" /></a>
+          <a href="https://twitter.com/youappvip"><img src="./images/social_media_icons/twitter.svg" alt="" /></a>
+          <a href=" https://www.instagram.com/youapp.vip/"><img src=" ./images/social_media_icons/instagram.svg" alt="" /></a>
+          <a href="https://www.tiktok.com/@youapp.vip"><img src="./images/social_media_icons/tiktok.svg" alt="" /></a>
+        </div>
 
-        <p>Lagunitas, CA</p>
-        <p>&copy; 2022 YouApp</p>
+        <!-- <img src=" ./images/youapp_logo_1.png" alt="About us 1" /> -->
+        <div class="signature">
+          <p>
+            <a href="./privacy-policy/">Privacy</a>
+          </p>
+          <p>
+            <a href="./end-user-license-agreement/">Terms</a>
+          </p>
+
+          <p>Lagunitas, CA</p>
+          <p>&copy; 2022 YouApp</p>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
