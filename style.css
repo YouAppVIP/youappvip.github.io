@@ -76,10 +76,6 @@ p {
   margin: 10px 0;
 }
 
-strong {
-  color: var(--primary-color);
-}
-
 a {
   text-decoration: none;
 }
@@ -343,7 +339,18 @@ header {
   margin: 0 auto;
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 24px;
+  padding-bottom: 10px;
+}
+
+.featured_app_stat {
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gray-color);
+  margin: 0 auto;
+  text-align: center;
+  font-variant: small-caps;
+  padding-bottom: 10px;
 }
 
 .app_store_button {
@@ -398,10 +405,15 @@ footer .footer_column_title {
 footer p {
   font-family: var(--heading-font);
   font-weight: 400;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 100%;
   color: var(--gray_color2);
   text-align: left;
+}
+
+footer strong {
+  font-weight: bold;
+  color: var(--gray_color2);
 }
 
 footer hr {

@@ -1,0 +1,15 @@
+/* -- HERO AREA -------------------------------------------------------------------- */
+
+.merch {
+  background-image: url('../images/merch.jpg');
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 480pt;
+  position: relative;
+}
+
+.pricing {
+  background-color: white;
+}
