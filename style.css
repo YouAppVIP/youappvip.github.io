@@ -41,14 +41,7 @@ body {
   margin: 0;
   color: #222;
   font-family: 'Poppins', sans-serif;
-  background-color: var(--dark-color);
-}
-
-button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+  background-color: black;
 }
 
 section {
@@ -59,7 +52,8 @@ section {
 h1 {
   font-size: 2.5rem;
   font-family: var(--heading-font);
-  font-weight: 700;
+  font-weight: 400;
+  text-align: center;
   color: var(--gray-color);
   margin: var(--space-md) 0;
 }
@@ -73,19 +67,12 @@ h2 {
   margin: var(--space-md) 0;
 }
 
-h3 {
-  font-family: var(--heading-font2);
-  font-size: 2rem;
-  color: #ababab;
-  text-align: center;
-  margin-bottom: 36px;
-}
-
 p {
   font-family: var(--heading-font2);
   font-size: 1.5rem;
   color: var(--gray-color);
   text-align: center;
+  line-height: 150%;
 }
 
 strong {
@@ -162,21 +149,12 @@ header {
 .hero-area {
   background-image: url('./images/hero2.jpg');
   color: white;
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   height: 480pt;
   position: relative;
 }
-
-/* .hero-area .container { */
-  /* position: absolute; */
-  /* height: 100%; */
-  /* bottom: 0; */
-  /* width: 100%; */
-/* } */
 
 .hero-heading {
   font-family: var(--heading-font);
@@ -184,25 +162,21 @@ header {
   font-weight: 400;
   color: white;
   text-shadow: 1px 1px 2px black;
+  text-align: left;
   padding-top: 488px;
 }
-
-/* ----------------------------------- CTA ------------------------------------ */
 
 .cta_button {
   /* display: inline; */
   background-color: var(--gray-color);
   color: var(--dark-color);
   width: 88px;
-  /* height: 44px; */
   font-family: var(--heading-font);
   font-weight: 600;
   font-size: 1.1rem;
   text-align: center;
-  /* vertical-align: middle; */
   border-radius: 29px;
   border: none;
-
   padding: 5px 20px;
 }
 
@@ -242,6 +216,7 @@ header {
 /* -- FEATURING -------------------------------------------------------------------- */
 
 .featuring {
+  background-color: black;
   padding: 0;
 }
 
@@ -251,6 +226,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   height: 480pt;
+  margin-bottom: 44px;
 }
 
 .featured_artist_title {
@@ -263,38 +239,6 @@ header {
   text-align: center;
   margin-top: 28px;
   margin-bottom: 28px;
-}
-
-.featuring .stack {
-  border-radius: 28px;
-  overflow: hidden;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
-
-.featuring .stack > * {
-  grid-area: 1/1/1/1;
-}
-
-.featured_artist_background {
-  background-color: black;
-  border-radius: 28px;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-  grid-column-gap: 8px;
-}
-
-.featuring .featured_artist_background .left_column {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.95)), url('./images/wallpapers/isitjosh2.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.featuring .featured_artist_background .right_column {
-  background-color: black;
 }
 
 .album_grid {
@@ -310,11 +254,9 @@ header {
 .featured_artist_content {
   padding: var(--space-2xl) var(--space-2xl);
   margin: auto;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 100%;
   height: 100%;
 }
@@ -417,50 +359,56 @@ header {
   margin: var(--space-md) 0;
 }
 
+/* -- DETAILS ----------------------------------------------------------------------- */
+
+.details {
+  background-image: url("./images/all_apps.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 480pt;
+}
+
 /* -- FOOTER ----------------------------------------------------------------------- */
 
 footer {
-  background-color: var(--dark-color);
+  background-color: black;
   text-align: center;
 }
 
-footer .signature {
-  margin: var(--space-lg) 0;
-  text-align: left;
+footer .footer_columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 28px;
 }
 
-footer .social_media_icons {
+footer .footer_column {
   display: flex;
-  gap: 12px;
-  /* flex-direction: column; */
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
 }
 
-footer .social_media_icons img {
-  width: 28px;
-  height: 28px;
-  opacity: 20%;
+footer .footer_column_title {
+  font-weight: bold;
 }
 
 footer p {
   font-family: var(--heading-font);
   font-weight: 400;
   font-size: 0.85rem;
-  line-height: 140%;
+  line-height: 100%;
   color: var(--gray_color2);
+  text-align: left;
 }
 
-/* Original Solution found on Stackoverflow here:
-http://stackoverflow.com/questions/26573346/ios-safari-messes-up-input-type-date
-*/
+footer hr {
+  opacity: 20%;
+  height: 1px;
+}
 
-input[type='date'] {
-  display: block;
-
-  /* Solution 1 */
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  min-height: 1.2em;
-
-  /* Solution 2 */
-  min-width: 96%;
+footer a {
+  color: var(--gray_color2);
+  text-decoration: none;
 }
