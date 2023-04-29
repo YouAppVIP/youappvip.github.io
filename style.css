@@ -73,6 +73,7 @@ p {
   color: var(--gray-color);
   text-align: center;
   line-height: 150%;
+  margin: 10px 0;
 }
 
 strong {
@@ -95,7 +96,7 @@ a {
 .copy {
   width: 100%;
   display: inline-block;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: left;
 }
 
@@ -163,7 +164,7 @@ header {
   color: white;
   text-shadow: 1px 1px 2px black;
   text-align: left;
-  padding-top: 488px;
+  padding-top: 476px;
 }
 
 .cta_button {
