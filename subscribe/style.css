@@ -1,15 +1,20 @@
+:root {
+  --dark-color: #0d0d0d;
+}
+
 /* -- HERO AREA -------------------------------------------------------------------- */
 
 .merch {
-  background-image: url('../images/merch.jpg');
+  background-image: url('../images/studios.jpg');
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 480pt;
+  height: 200pt;
   position: relative;
 }
 
 .pricing {
-  background-color: white;
+  background-color: var(--dark-color);
+  padding-bottom: 44px;
 }

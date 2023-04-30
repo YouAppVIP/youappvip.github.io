@@ -1,125 +1,126 @@
 <!DOCTYPE html>
 <html>
-<script>
-  window.onscroll = () => {
-    if (window.pageYOffset > 50) {
-      document.getElementById('top-header').classList.add('top-header--white-background');
-    } else {
-      document.getElementById('top-header').classList.remove('top-header--white-background');
-    }
-  };
-</script>
-
-<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-195797052-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-195797052-1');
+    window.onscroll = () => {
+      if (window.pageYOffset > 50) {
+        document.getElementById('top-header').classList.add('top-header--white-background');
+      } else {
+        document.getElementById('top-header').classList.remove('top-header--white-background');
+      }
+    };
   </script>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="YouApp &dash; white label apps for independent artists" />
-  <meta property="og:image" content="https://youapp.vip/images/hero.jpg" />
+  <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="./style.css" />
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-195797052-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-  <title>YouApp: Personal apps for independent artists</title>
-</head>
+      gtag('config', 'UA-195797052-1');
+    </script>
 
-<body>
-  <!-- TOP HEADER -->
-  <div class="top-header" id="top-header">
-    <div class="container">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="YouApp &dash; white label apps for independent artists" />
+    <meta property="og:image" content="https://youapp.vip/images/hero.jpg" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>YouApp: Personal apps for independent artists</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="top-header" id="top-header">
       <header>
+        <!-- LOGO -->
         <div class="logo_container">
-          <img src="../images/youapp_logo.svg" alt="" class="logo" />
+          <a href="https://youapp.vip">
+            <img src="../images/youapp_logo.svg" alt="" class="logo" />
+          </a>
         </div>
 
-        <a href="https://youapp.vip">
-          <h1 class="youapp">YouApp</h1>
-        </a>
+        <!-- TITLE -->
+        <a href="https://youapp.vip" class="youapp"> YouApp </a>
 
-        <div class="logo_container">
-
-        </div>
+        <!-- BLANK -->
+        <div class="logo_container"></div>
       </header>
     </div>
-  </div>
 
-  <!-- HERO AREA  -->
-  <section class="merch">
-    <div class="container">
-      <div class="copy">
-        <!-- <h1 class="hero-heading">Artistic freedom.</h1> -->
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h1>All levels</h1>
-      <p>Apps that pay for themselves.</p>
-      <p></p>
-    </div>
-  </section>
-
-  <div>
-    <stripe-pricing-table pricing-table-id="prctbl_1N0bShEhwj4WvcKuGM1LQRoH"
-      publishable-key="pk_test_51MOJBjEhwj4WvcKuR5sfKNUtkvoSWvWazaZiys0NCFCZ0eodtIqPwbv5E2adl1YU1rsLGln5ZsCWUDKwNWQVpP3t00T435ZpDZ">
-    </stripe-pricing-table>
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer_columns">
-        <div class="footer_column">
-          <p class="footer_column_title">Social</p>
-          <a href="https://twitter.com/youappvip">
-            <p>Twitter</p>
-          </a>
-          <a href=" https://www.instagram.com/youapp.vip/">
-            <p>Instagram</p>
-          </a>
-          <a href="https://www.tiktok.com/@youapp.vip">
-            <p>Tik Tok</p>
-          </a>
-        </div>
-
-        <!-- <img src=" ./images/youapp_logo_1.png" alt="About us 1" /> -->
-        <div class="footer_column">
-
-        </div>
-
-        <div class="footer_column">
-          <a href="mailto:daniel@youapp.vip">
-            <p>Contact <strong>sales</strong></p>
-          </a>
-          <a href="./privacy-policy/">
-            <p>Privacy</p>
-          </a>
-          <a href="./end-user-license-agreement/">
-            <p>Terms</p>
-          </a>
+    <!-- HERO AREA  -->
+    <section class="merch">
+      <div class="container">
+        <div class="copy">
+          <!-- <h1 class="hero-heading">Artistic freedom.</h1> -->
         </div>
       </div>
+    </section>
 
-      <hr />
-      <p>&copy; 2023 YouApp. All rights reserved. Lagunitas, CA.</p>
+    <section>
+      <div class="container">
+        <h1>Seeking pioneers.</h1>
+        <p>
+          Now accepting new artists,<br />
+          149 spots remaining.
+        </p>
+        <p>Choose a plan, and let's go!</p>
+      </div>
+    </section>
+
+    <div class="pricing">
+      <stripe-pricing-table
+        pricing-table-id="prctbl_1N0ZrREhwj4WvcKusmn7sFkc"
+        publishable-key="pk_live_51MOJBjEhwj4WvcKuoN0lhAnLnGeVgUAhsEpEc4P0WJIgScawuddTfOpdS0qVdIeek9KyUJO3y6CbQUrBWMQ0e0GN00qqeTpThq"
+      >
+      </stripe-pricing-table>
     </div>
-  </footer>
-</body>
 
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer_columns">
+          <div class="footer_column">
+            <p class="footer_column_title">Social</p>
+            <a href="https://twitter.com/youappvip">
+              <p>Twitter</p>
+            </a>
+            <a href=" https://www.instagram.com/youapp.vip/">
+              <p>Instagram</p>
+            </a>
+            <a href="https://www.tiktok.com/@youapp.vip">
+              <p>Tik Tok</p>
+            </a>
+          </div>
+
+          <!-- <img src=" ./images/youapp_logo_1.png" alt="About us 1" /> -->
+          <div class="footer_column"></div>
+
+          <div class="footer_column">
+            <a href="mailto:daniel@youapp.vip">
+              <p>Contact <strong>sales</strong></p>
+            </a>
+            <a href="https://youapp.vip/privacy-policy/">
+              <p>Privacy</p>
+            </a>
+            <a href="https://youapp.vip/end-user-license-agreement/">
+              <p>Terms</p>
+            </a>
+          </div>
+        </div>
+
+        <hr />
+        <p>&copy; 2023 YouApp. Lagunitas, CA. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
